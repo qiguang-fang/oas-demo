@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "description": "リクエスト情報  \n Request information",
+  "required": [
+    "file"
+  ],
+  "properties": {
+    "file": {
+      "type": "string",
+      "description": "タスクに添付ファイルとして追加するファイル  \n Files to add as attachments to tasks",
+      "example": "string"
+    }
+  }
+}

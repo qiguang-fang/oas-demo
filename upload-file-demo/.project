@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>sys-api</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.mule.tooling.apidesigner.apiprojectnature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.mule.tooling.apidesigner.exchangejson</nature>
+	</natures>
+</projectDescription>

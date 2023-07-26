@@ -1,0 +1,44 @@
+{
+  "description": "サーバー側の予期せぬエラー  \n Unexpected error on server side",
+  "headers": {
+    "X-Request-Id": {
+      "schema": {
+        "type": "string"
+      }
+    },
+    "Cache-Control": {
+      "schema": {
+        "type": "string"
+      }
+    },
+    "Pragma": {
+      "schema": {
+        "type": "string"
+      }
+    },
+    "X-Mulesoft-Statuscode-Through": {
+      "schema": {
+        "type": "boolean"
+      }
+    }
+  },
+  "content": {
+    "application/json": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "description": "エラーコード  \n Error code",
+            "example": "500"
+          },
+          "errorMessage": {
+            "type": "string",
+            "description": "エラーメッセージ  \n Error message",
+            "example": "Unexpected Error."
+          }
+        }
+      }
+    }
+  }
+}

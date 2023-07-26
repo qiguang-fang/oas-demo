@@ -1,0 +1,52 @@
+{
+  "post": {
+    "summary": "ファイルアップロードAPI  \n File upload (no attributes specified) API",
+    "description": "ファイルをアップロードする  \n Upload a file without attributes",
+    "parameters": [
+      {
+        "name": "Authorization",
+        "in": "header",
+        "description": "Oauth認証",
+        "required": true,
+        "schema": {
+          "type": "string"
+        }
+      } 
+    ],
+    "requestBody": {
+      "description": "登録されたファイル内容  \n Registered file contents",
+      "required": true,
+      "content": {
+        "application/x-www-form-urlencoded": {
+          "schema": {
+            "$ref": "#/components/schemas/file-post-request"
+          }
+        }
+      }
+    },
+    "responses": {
+      "200": {
+        "description": "Success.  \n Success.",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/folder-file-post-response"
+            }
+          }
+        }
+      },
+      "400": {
+        "$ref": "#/components/responses/error-response-400"
+      },
+      "500": {
+        "$ref": "#/components/responses/error-response-500"
+      },
+      "503": {
+        "$ref": "#/components/responses/error-response-503"
+      },
+      "504": {
+        "$ref": "#/components/responses/error-response-504"
+      }
+    }
+  }
+}

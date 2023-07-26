@@ -1,0 +1,39 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Sys API  \n Sys API",
+    "description": "APIを呼出  \n Call Sys API",
+    "version": "0.0.0"
+  },
+  "servers":[
+    {
+      "url": "https://{fqdn}/sys/api/v1/"
+    }
+  ],
+  "paths": {
+    "/file": {
+      "$ref": "./paths/file.json"
+    }
+  },
+  "components": {
+    "schemas": {
+      "file-post-request": {
+        "$ref": "./components/file-post-request.json"
+      }
+    },
+    "responses": {
+      "error-response-400": {
+        "$ref": "./components/error-response-400.json"
+      },
+      "error-response-500": {
+        "$ref": "./components/error-response-500.json"
+      },
+      "error-response-503": {
+        "$ref": "./components/error-response-503.json"
+      },
+      "error-response-504": {
+        "$ref": "./components/error-response-504.json"
+      }
+    }
+  }
+}
